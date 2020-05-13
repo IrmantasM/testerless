@@ -1,0 +1,19 @@
+functions:
+  my-function-1: # Name of the deployed function, using same name create a directory in the events folder
+    tests:
+      success-expected-200-statusCode: # Name for the test case, using same name create a .json file in `my-function-1` directory
+        response:
+          statusCode: 200 # Expected response {"statusCode": "200"}
+
+  # Configuring as many tests for as many functions as we want
+  my-function-2:
+    tests:
+      success-journey-1-expected-200-statusCode:
+        response:
+          statusCode: 200
+      success-journey-2-expected-200-statusCode:
+        response:
+          statusCode: 200
+      fail-expected-500-statusCode:
+        response:
+          statusCode: 500

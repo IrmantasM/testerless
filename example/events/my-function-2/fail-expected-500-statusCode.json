@@ -1,0 +1,7 @@
+/* This needs to be a test case specific payload that your function expects  e.g. 
+ * CloudWatch Event, API Gateway Event containing body request or just a custom payload */
+ {
+  "key1": "value1",
+  "key2": "value2",
+  "key3": "value3"
+}
