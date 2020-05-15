@@ -1,5 +1,7 @@
 # testerless
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=IrmantasM_testerless&metric=alert_status)](https://sonarcloud.io/dashboard?id=IrmantasM_testerless) [![Known Vulnerabilities](https://snyk.io/test/github/IrmantasM/testerless/badge.svg)](https://snyk.io/test/github/IrmantasM/testerless)
+
 Simplistic RequestResponse based Lambda function test framework to test _deployed_ Lambda functions.
 
 ## Changelog
