@@ -3,6 +3,7 @@ functions:
     publish-correct-body-through-api:
       request:
         type: api-gateway
+        path: '/myapi'
         headers:
           Authorization: <base64 encoded>
       response:
@@ -11,6 +12,7 @@ functions:
     publish-malformed-body-through-api:
       request:
         type: api-gateway
+        path: '/myapi'
         headers:
           Authorization: <base64 encoded>
       response:
@@ -18,17 +20,13 @@ functions:
           statusCode: 200
     publish-correct-body-direct:
       request:
-        type: api-gateway
-        headers:
-          Authorization: <base64 encoded>
+        type: manual
       response:
         body:
           statusCode: 200
     publish-malformed-body-direct:
       request:
-        type: api-gateway
-        headers:
-          Authorization: <base64 encoded>
+        type: manual
       response:
         body:
           statusCode: 200
@@ -37,6 +35,7 @@ functions:
     unpublish-correct-body-through-api:
       request:
         type: api-gateway
+        path: '/myapi'
         headers:
           Authorization: <base64 encoded>
       response:
@@ -45,6 +44,7 @@ functions:
     unpublish-malformed-body-through-api:
       request:
         type: api-gateway
+        path: '/myapi'
         headers:
           Authorization: <base64 encoded>
       response:
@@ -52,17 +52,13 @@ functions:
           statusCode: 200
     unpublish-correct-body-direct:
       request:
-        type: api-gateway
-        headers:
-          Authorization: <base64 encoded>
+        type: manual
       response:
         body:
           statusCode: 200
     unpublish-malformed-body-direct:
       request:
-        type: api-gateway
-        headers:
-          Authorization: <base64 encoded>
+        type: manual
       response:
         body:
           statusCode: 200

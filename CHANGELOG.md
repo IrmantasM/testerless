@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## WIP [0.0.3] - 2020-05-16
+## WIP [0.1.0] - 2020-05-16
 
 ### Added
 
@@ -13,6 +13,7 @@
   - Moved parsing logic into a `parser.js` custom library
 - Created classes for Function, Request, Response, Test and TestConfig to make use of OOP benefits
 - Added required logic to handle custom response
+- Added design diagrams
 - Updated README
 - Updated example files
 
