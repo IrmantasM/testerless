@@ -1,0 +1,68 @@
+functions:
+  my-function-01:
+    publish-correct-body-through-api:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+    publish-malformed-body-through-api:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+    publish-correct-body-direct:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+    publish-malformed-body-direct:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+
+  my-function-02:
+    unpublish-correct-body-through-api:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+    unpublish-malformed-body-through-api:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+    unpublish-correct-body-direct:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
+    unpublish-malformed-body-direct:
+      request:
+        type: api-gateway
+        headers:
+          Authorization: <base64 encoded>
+      response:
+        body:
+          statusCode: 200
