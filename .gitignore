@@ -2,3 +2,4 @@ node_modules
 /test.yml
 /events/
 test.backup.yml
+.DS_Store
