@@ -7,8 +7,9 @@ const figlet = require('figlet');
 const fs     = require('fs');
 
 // Custom libraries
-const inquirer  = require('./lib/inquirer');
-const tester    = require('./lib/tester')
+const inquirer   = require('./lib/inquirer');
+const parser     = require('./lib/parser');
+const tester     = require('./lib/tester');
 
 clear();
 
@@ -39,8 +40,13 @@ const run = async () => {
     process.exit();
   }
 
-  // Run Tests
-  await tester.runTests(ymlFileName, eventsDir);
+  // Get TestConfig
+  const config = await parser.parseTestConfig(ymlFileName, eventsDir);
+  // console.log(config)
+  config.forEach(function (item, index) {
+    tester.runTest(item);
+  });
 };
 
+// Everything starts here
 run();
