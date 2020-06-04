@@ -12,7 +12,7 @@
   "dependencies": {
     "@octokit/auth-basic": "^1.4.3",
     "@octokit/rest": "^17.9.0",
-    "aws-sdk": "^2.675.0",
+    "aws-sdk": "^2.676.0",
     "chalk": "^4.0.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
